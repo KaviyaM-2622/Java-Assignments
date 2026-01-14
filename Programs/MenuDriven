@@ -1,0 +1,38 @@
+package com.index;
+import java.util.Scanner;
+
+public class Menu_Driven {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		int number;
+		
+		do {
+			System.out.println("Add");
+			System.out.println("Sub");
+			System.out.println("Exit");
+			System.out.println("Enter number");
+			
+			number=obj.nextInt();
+			switch(number) {
+			case 1:
+				System.out.println("Result"+(5+3));
+				break;
+			case 2:
+				System.out.println("Result"+(8-4));
+				break;
+			case 3:
+				System.out.println("Exit");
+				break;
+			default:
+				System.out.println("Invalid numner");
+			}
+		}while(number!=3);
+			
+
+			
+		}
+
+	}
+
+
