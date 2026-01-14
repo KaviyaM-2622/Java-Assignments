@@ -1,0 +1,26 @@
+package com.index;
+
+public class SwapArray {
+
+	public static void main(String[] args) {
+		// swap using temp(variable)
+		int a=10;
+		int b=20;
+		System.out.println("Before swapping" + a+" "+b);
+		int temp=a;//temp=1st variable,a=10
+		a=b;//1st variable=2nd variable, a=b =>b=10
+		b=temp;//2nd variable b=10
+		
+		System.out.println("After swapping"+a+" "+b);
+		//swap using temp(array)
+		int c=6;
+		int d=7;
+		int[]temparray= {c,d};//string in an array
+		System.out.println("Before swapping"+c+" "+d);
+		c=temparray[1];
+		d=temparray[0];
+		System.out.println("After swapping"+c+" "+d);
+
+	}
+
+}
