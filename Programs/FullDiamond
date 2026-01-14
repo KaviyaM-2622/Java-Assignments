@@ -1,0 +1,19 @@
+package com.index;
+import java.util.Scanner;
+public class FullDiamond {
+
+	public static void main(String[] args) {
+		int i,j,r;
+		System.out.println("Input number of rows:");
+		Scanner in=new Scanner(System.in);
+		r=in.nextInt();
+		for(i=0;i<=r;i++)
+		{
+			for(j=1;j<=r-i;j++)
+				System.out.print(" ");
+			
+		}
+
+	}
+
+}
