@@ -1,0 +1,48 @@
+package com.index;
+
+interface StudentDetails
+{
+	String college_name="ABC college";
+	int pass_mark=40;
+	void displaystudent(); //abstract method
+}
+
+public class AbstractUsingVariable implements StudentDetails {
+	
+	int rollno;
+	String name;
+	int marks;
+	
+	AbstractUsingVariable(int rollno,String name,int marks)
+	{
+		this.rollno=rollno;
+		this.name=name;
+		this.marks=marks;
+	}
+	public void displaystudent()
+	{
+		System.out.println("College Name: " + college_name);
+		System.out.println("Roll No: " + rollno);
+		System.out.println("Name: " + name);
+		System.out.println("Marks: " + marks);
+		
+		if(marks>=pass_mark)
+		{
+			System.out.println("Result: Pass");
+		}
+		else
+		{
+			System.out.println("Result: Fail");
+		}
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		AbstractUsingVariable obj=new AbstractUsingVariable(101,"Kaviya",90);
+		obj.displaystudent();
+
+	}
+
+}
