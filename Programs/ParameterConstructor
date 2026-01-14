@@ -1,0 +1,23 @@
+package com.index;
+
+class StudentN
+{
+	int age;
+	String name;
+	StudentN(int a,String n)
+	{
+		this.age=a;
+		this.name=n;
+	}
+}
+
+public class ParameterConstructor {
+
+	public static void main(String[] args) {
+		StudentN s =new StudentN(20,"Kaviya");
+		System.out.println(s.age);
+		System.out.println(s.name);
+
+	}
+
+}
