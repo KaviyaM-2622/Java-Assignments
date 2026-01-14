@@ -1,0 +1,48 @@
+package Assignents;
+abstract class BankAccount
+{
+	int AccountNumber;
+	double Balance;
+
+BankAccount(int AccountNumber, double Balance )
+{
+	this.AccountNumber=AccountNumber;
+	this.Balance=Balance;
+}
+abstract void deposit(double Amount);
+abstract void withdraw(double Amount);
+}
+class SavingsAccount extends BankAccount
+{
+	SavingsAccount(int AccountNumber, double Balance )
+	{
+		super(AccountNumber, Balance);
+	}
+	void deposit(double Amount)
+	{
+		Balance=Balance +Amount;
+		System.out.println("AccountNumber: "+ AccountNumber);
+		System.out.println("Balance after deposit: "+ Balance);
+	}
+	void withdraw(double Amount)
+	{
+		if(Amount <= Balance)
+		{
+			Balance=Balance - Amount;
+			System.out.println("Withdrawn: "+ Amount);
+		}
+		else
+		{
+			System.out.println("Insufficient balance");
+		}
+		System.out.println("Current balance: "+ Balance);
+		}
+}
+public class AbstractBankAccount {
+	public static void main(String[] args) {
+		BankAccount account=new SavingsAccount(111,20000);
+		account.deposit(1700);
+		System.out.println();
+		account.withdraw(2500);
+		}
+	}
