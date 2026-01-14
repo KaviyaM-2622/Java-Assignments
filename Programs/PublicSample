@@ -1,0 +1,16 @@
+package com.index;
+
+public class PublicSample {
+public int id;
+public void display()
+{
+	System.out.println(id);
+}
+	public static void main(String[] args) {
+		PublicSample ps=new PublicSample();
+		ps.id=909;
+		ps.display();
+
+	}
+
+}
