@@ -1,0 +1,48 @@
+package com.index;
+class A
+{
+	public void method()
+	{
+		System.out.println("method A");
+	}}
+class B extends A
+{
+	public void methodB()
+	{
+		System.out.println("method B");
+	}}
+class C extends A
+{
+	public void methodC()
+	{
+		System.out.println("method C");
+	}}
+class D extends A
+{
+	public void methodD()
+	{
+		System.out.println("method D");
+	}}
+
+public class SkeletalProgram {
+
+	public static void main(String[] args) {
+		A objA= new A();
+		B objB= new B();
+		C objC= new C();
+		D objD= new D();
+		
+		objB.methodB();
+		objC.methodC();
+		objD.methodD();
+		
+//		objB.methodB();
+//		objC.methodC();
+//		objD.methodD();
+//		
+		
+
+
+	}
+
+}
