@@ -1,0 +1,81 @@
+//package com.index;
+//class Employee
+//{
+//	//private variables
+//	private int EmpId;
+//	private String EmpName;
+//	private int EmpAssessmentMarks;
+//	private String AssessmentResult() {
+//		return Employee;
+//	}
+//	
+//	public int getEmpId() {
+//		return EmpId;
+//	}
+////public method(get & set)
+//	public void setEmpId(int empId) {
+//		EmpId = empId;
+//	}
+//
+//	public String getEmpName() {
+//		return EmpName;
+//	}
+//
+//	public void setEmpName(String empName) {
+//		EmpName = empName;
+//	}
+//
+//	public int getEmpAssessmentMarks() {
+//		return EmpAssessmentMarks;
+//	}
+//
+//	public void setEmpAssessmentMarks(int empAssessmentMarks) {
+//		this.EmpAssessmentMarks = empAssessmentMarks;
+//		setAssessment();
+//	}
+//private void setAssessment()
+//{
+//	if(EmpAssessmentResult>=80)
+//	{
+//		AssessmentResult="Excellent";
+//	}
+//	else if(EmpAssessmentMarks>=60)
+//	{
+//		AssessmentResult="Good";
+//	}
+//	else if(EmpAssessmentMarks>=50)
+//	{
+//		AssessmentResult="Better";
+//	}
+//	else if(EmpAssessmentMarks>=40)
+//	{
+//		AssessmentResult="Average";
+//	}
+//	else
+//	{
+//		AssessmentResult="Poor";
+//	}
+//	
+//}
+//}
+//	
+//	
+//
+//public class EncapsulationSample {
+//
+//	public static void main(String[] args) {
+//		Employee emp=new Employee();
+//		
+//		emp.setEmpId(100);
+//		emp.setEmpName("Kaviya");
+//		emp.setEmpAssessmentMarks(85);
+//		
+//		System.out.println("Employee ID: " +emp.getEmpId());
+//		System.out.println("Employee Name: " +emp.getEmpName());
+//		System.out.println("Employee Marks: " +emp.getEmpAssessmentMarks());
+//		System.out.println("Employee Result: " +emp.getEmpAssessmentResult());
+//	
+//
+//	}
+//
+//}
