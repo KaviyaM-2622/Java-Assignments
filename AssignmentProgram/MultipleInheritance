@@ -1,0 +1,27 @@
+package Assignents;
+
+interface Printable{
+	void print();
+}
+interface Scannable{
+	void scan();
+}
+
+class  MultipleI implements Printable,Scannable {
+	public void print() {
+		System.out.println("Printing...");
+	}
+	public void scan() {
+		System.out.println("Scanning...");
+	}
+}
+public class MultipleInheritance{
+	public static void main(String[] args) {
+		MultipleI mi=new MultipleI();
+		mi.print();
+		mi.scan();
+		
+
+	}
+
+}
