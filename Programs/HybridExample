@@ -1,0 +1,46 @@
+package com.index;
+//interface 1
+interface Company
+{
+	String companyName="TechSoft";
+}
+//interface 1
+interface Salary
+{
+	int salary=700000;
+}
+//parent class
+class Employee2
+{
+	int empId;
+	String empName;
+}
+//child class (hybrid inheritance)
+class Developer1 extends Employee2 implements Company,Salary
+{
+	void display()
+	{
+		System.out.println("Employee ID "+empId);
+		System.out.println("Employee Name "+empName);
+		System.out.println("Employee Company "+companyName);
+		System.out.println("Employee Salary "+salary);
+		
+	}
+}
+
+
+
+
+public class HybridExample {
+
+	public static void main(String[] args) {
+		Developer1 dev=new Developer1();
+		
+		dev.empId=100;
+		dev.empName="Kaviya";
+		
+		dev.display();
+
+	}
+
+}
