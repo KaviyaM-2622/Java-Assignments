@@ -1,0 +1,36 @@
+package Assignents;
+class Userr{
+	void login() {
+		System.out.println("User Loggedin");
+	}
+}
+class Adminn extends User{
+	void managePlatform() {
+		System.out.println("Admin is managing");
+	}
+}
+class Seller extends User{
+	void addProducts() {
+		System.out.println("Seller is selling the products");
+	}
+}
+class Customerr extends User{
+	void buyProducts() {
+		System.out.println("Customer is buying the products");
+	}
+}
+public class EcommerceInheritance {
+	public static void main(String[] args) {
+		Adminn a1=new Adminn();
+		a1.login();
+		a1.managePlatform();
+		
+		Seller s1=new Seller();
+		s1.login();
+		s1.addProducts();
+		
+		Customerr c1=new Customerr();
+		c1.login();
+		c1.buyProducts();
+		}
+	}
