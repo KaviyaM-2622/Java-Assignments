@@ -1,0 +1,19 @@
+package com.index;
+
+import java.util.Scanner;
+
+public class Read_Input {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		char userchoice	;
+		
+		do {
+			System.out.println("Do you want to continue? (y/n)");
+			userchoice=obj.next().charAt(0);
+		}
+		while (userchoice=='y');
+		System.out.println("Work Ended");
+		}
+
+}
