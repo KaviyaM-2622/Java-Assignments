@@ -1,0 +1,17 @@
+package com.index;
+
+public class ProtectedSample {
+	
+	protected int protectedId=9;
+	public void display()
+	{
+		System.out.println("Protected Id " + protectedId);
+	}
+
+	public static void main(String[] args) {
+		ProtectedSample ps=new ProtectedSample();
+		ps.display();
+
+	}
+
+}
