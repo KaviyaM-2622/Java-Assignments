@@ -1,0 +1,33 @@
+package com.index;
+
+import java.util.Scanner;
+
+public class ReverseInteger {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		int num1=sc.nextInt();
+		int reversed=0;
+		while(num!=0)
+		{
+			int digit=num%10;//get the last digit
+			reversed=reversed*10+digit;//adds the digit at the end of reversed number
+			num=num/10;//removes the digit, until num becomes 0
+		}
+		
+		System.out.println("Reversed number is " +reversed);
+		
+		if(num1%2==0)
+			System.out.println("The number is even" +num1);
+		else
+		{
+			System.out.println("The number is odd" +num1);
+		}
+		sc.close();
+		
+
+	}
+
+}
