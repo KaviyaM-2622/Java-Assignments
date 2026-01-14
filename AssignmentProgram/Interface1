@@ -1,0 +1,29 @@
+package Assignents;
+class Employeee{
+	void work() {
+		System.out.println("Employee is performing daily tasks");
+	}
+}
+interface Developer{
+	void develop();
+}
+interface Tester{
+	void test();
+}
+class TeamLead extends Employeee implements Developer,Tester{
+	public void develop() {
+		System.out.println("Teamleand is building software");
+	}
+	public void test() {
+		System.out.println("Teamlead is checking the software quality");
+	}
+}
+public class Interface1 {
+	public static void main(String[] args) {
+		TeamLead l1=new TeamLead();
+		l1.work();
+		l1.develop();
+		l1.test();
+
+	}
+}
