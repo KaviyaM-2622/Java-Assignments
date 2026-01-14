@@ -1,0 +1,28 @@
+package Assignents;
+class Account{
+	void accountDetails() {
+		System.out.println("Displaying account holder details");
+	}
+}
+interface Savings{
+	void calculateInterest();
+}
+interface Current{
+	void overdraftLimit();
+}
+class PremimumAccount extends Account implements Savings, Current{
+	public void calculateInterest() {
+		System.out.println("Interest is calculated for savings account");
+	}
+	public void overdraftLimit() {
+		System.out.println("Overdraft limit is available for current account");
+	}
+}
+public class Interface2 {
+	public static void main(String[] args) {
+		PremimumAccount pma=new PremimumAccount();
+		pma.accountDetails();
+		pma.calculateInterest();
+		pma.overdraftLimit();
+		}
+}
