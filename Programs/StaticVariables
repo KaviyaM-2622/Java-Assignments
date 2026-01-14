@@ -1,0 +1,18 @@
+package com.index;
+
+public class StaticVariables {
+	static int x=10;//static is mutable by default
+	
+	static final int y=90;//static is immutable, while using final keyword
+
+	public static void main(String[] args) {
+		//classname.field=value
+		StaticVariables.x=90;//static is mutable by default
+		System.out.println("static is mutable by default "+StaticVariables.x);
+		
+		//StaticVariables.y=80;//static is immutable by using final keyword
+		System.out.println("static is immutable by using(final)" +StaticVariables.y);
+
+	}
+
+}
