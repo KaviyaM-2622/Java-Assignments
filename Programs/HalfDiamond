@@ -1,0 +1,33 @@
+package com.index;
+import java.util.Scanner;
+public class HalfDiamond {
+
+	public static void main(String[] args) {
+		int i,j,spaces,rows;
+		
+		System.out.print("Input number of rows( half of the diamond): ");
+		Scanner in=new Scanner(System.in);
+				rows=in.nextInt();
+				//loop for the upper half
+				for(i=1;i<rows;i++)//iteration prints the rows of pyramid
+				{
+					//loop to print leading spaces
+					//print spaces before starts to center the pyramid
+					//number of spaces decreases as i increases
+					for(spaces=1;spaces<rows-i;spaces++)
+					{
+						System.out.print(" ");
+						
+					}
+					//loop to print stars
+					//2*i-1 ensures the pyramid shape4
+					for(j=1;j<=2*i-1; j++)
+					{
+						System.out.print("*");
+					}
+					System.out.println(" ");
+				}
+
+	}
+
+}
