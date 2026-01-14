@@ -1,0 +1,23 @@
+package com.index;
+
+import java.util.Scanner;
+public class Mobile_Number {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		String mobile;
+		
+		do {
+			System.out.println("Enter mobile number");
+			mobile=obj.next();
+			
+			if(mobile.length() !=10) {
+				System.out.println("Invalid mobile number");
+			}
+		}
+		while (mobile.length() !=10);
+		System.out.println("Mobile number valid");
+
+	}
+
+}
