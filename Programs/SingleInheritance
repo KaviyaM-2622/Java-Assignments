@@ -1,0 +1,22 @@
+package com.index;
+//super class
+class Animal{
+	void sleep()
+	{
+		System.out.println("Animal sleeps");
+	}
+}
+//sub class
+class Dog extends Animal {
+	void bark()
+	{
+		System.out.println("Dog barks");
+	}
+}
+class SingleInheritance{
+	public static void main(String[] args) {
+		Dog d=new Dog();
+		d.sleep(); //inherited from Animal class
+		d.bark();//own method
+	}
+}
