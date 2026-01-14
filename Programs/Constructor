@@ -1,0 +1,28 @@
+package com.index;
+
+class Student1//class 
+{
+	int age;
+	String name;
+	
+	//Default Constructor
+	Student1()
+	{
+//		age=18;
+//		name="Kaviya";
+	}
+	
+	public class Constructor{
+
+	public static void main(String[] args) {
+		
+			
+			Student1 s1=new Student1();
+			System.out.println(s1.age);
+			System.out.println(s1.name);
+		}
+		
+
+	}
+
+}
