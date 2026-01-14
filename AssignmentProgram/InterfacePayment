@@ -1,0 +1,28 @@
+package Assignents;
+
+interface Payment{
+	void Pay();
+}
+
+class CreditCardPayment implements Payment{
+	public void Pay() {
+		System.out.println("Payment completed using Credit Card");	
+		}
+}
+class UPIPayment implements Payment{
+	public void Pay() {
+		System.out.println("Payment completed using UPI");
+	}
+}
+public class InterfacePayment {
+
+	public static void main(String[] args) {
+		Payment p1 =new CreditCardPayment();
+		p1.Pay();
+		
+		Payment p2 = new  UPIPayment();
+		p2.Pay();
+
+	}
+
+}
