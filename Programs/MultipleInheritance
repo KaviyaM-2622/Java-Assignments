@@ -1,0 +1,23 @@
+package com.index;
+//interface
+interface AnimalNew{
+	void sound();//abstract method
+}
+
+class DogNew implements AnimalNew
+{
+	public void sound()//abstract method implementation
+	{
+		System.out.println("bark");	
+	}
+}
+public class MultipleInheritance {
+	//not allowed (ambiguity problem) like diamond problem
+
+	public static void main(String[] args) {
+		DogNew g=new DogNew();
+		g.sound();
+
+	}
+
+}
