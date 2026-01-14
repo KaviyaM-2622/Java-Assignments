@@ -1,0 +1,15 @@
+package com.index;
+
+public class Increment {
+
+	public static void main(String[] args) {
+		int num=7;
+		while (num<=15) {
+			System.out.println(num);
+			num++;
+		}
+	
+
+	}
+
+}
