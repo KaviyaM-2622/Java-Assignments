@@ -1,0 +1,26 @@
+package com.index;
+
+public class InstanceVariable {
+	
+		int a=20;
+		int b;//instance variables
+		
+		void show()
+		{
+			System.out.println(a);
+		}
+	
+
+	public static void main(String[] args) {
+		InstanceVariable obj=new InstanceVariable();
+		obj.show();
+		
+		obj.b=90;//using the field
+		System.out.println("The value of object is "+obj.b);
+		
+
+
+
+	}
+
+}
