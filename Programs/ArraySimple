@@ -1,0 +1,55 @@
+package com.index;
+
+public class ArraySimple {
+
+	public static void main(String[] args) {
+		
+		
+		//declaring arrays
+//		int[] numbers;
+//		int numbers[];
+//		numbers =new int[5];//best
+		int[]numbers= {10,20,30,40};
+		
+		//accessing Array Elements
+		System.out.println(numbers[0]);
+		System.out.println(numbers[1]);
+		
+		//modifying Array Elements
+		numbers[1]=90;
+		System.out.println("After Modifying values"+numbers[1]);
+		
+		//length through an array
+		System.out.println("Length of ana Array"+numbers.length);
+		
+		//looping through an array
+		for(int i=0;i<numbers.length;i++)
+		{
+			System.out.println(numbers[i]);
+		}
+		//enhanced  loop
+		//for (data type of array variable.arrayname){}
+		for(int num:numbers)
+		{
+			System.out.println(num);
+		}
+		
+		String[] courses= {"ancb","hchs","hgdsh","dhsj"};//string array
+		System.out.println("The third course is"+courses[2]);
+		
+		//length of the element
+		System.out.println("Length of ana Array"+courses.length);
+		
+		//print the array
+		for(int i=0;i<courses.length;i++)
+		{
+			System.out.println("the array is"+courses[i]+"");
+		}
+	
+		
+		
+		//
+		
+	}
+
+}
