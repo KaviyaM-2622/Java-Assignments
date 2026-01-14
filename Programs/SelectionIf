@@ -1,0 +1,19 @@
+package com.index;
+
+import java.util.Scanner;
+
+public class Selection_If {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the age");
+		Scanner obj=new Scanner(System.in);
+		int age=obj.nextInt(); //age is int,nextInt()
+		
+		if(age>=18)
+		{
+			System.out.println("Eligible to vote");
+		}
+
+	}
+
+}
