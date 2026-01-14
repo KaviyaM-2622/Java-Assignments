@@ -1,0 +1,23 @@
+package com.index;
+
+public class UpdateSalary {
+
+	public static void main(String[] args) {
+		int salary=25000;
+		
+		salary+= 4000;
+		System.out.println("Salary after increase: " +salary);
+		
+		salary -=3000;
+		System.out.println("Salary after decrease: " +salary);
+		
+		salary *=3;
+		System.out.println("Salary after multiply: " +salary);
+		
+		salary /=2;
+		System.out.println("Salary after divide:" +salary);
+	
+
+	}
+
+}
