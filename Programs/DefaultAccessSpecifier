@@ -1,0 +1,17 @@
+package com.index;
+
+public class DefaultAccessSpecifier {
+	int id;
+	void display()
+	{
+		System.out.println("ID "+id);
+	}
+
+	public static void main(String[] args) {
+		DefaultAccessSpecifier das=new DefaultAccessSpecifier();
+		das.id=900;
+		das.display();
+
+	}
+
+}
