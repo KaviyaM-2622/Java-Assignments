@@ -1,0 +1,16 @@
+package com.index;
+import com.index.ThreadNewSample;
+public class RunnableThreadSample implements Runnable {
+	public void run()
+	{
+		System.out.println("Thread is running");
+	}
+
+	public static void main(String[] args) {
+		RunnableThreadSample mt=new RunnableThreadSample();
+		Thread t=new Thread(mt);
+		t.start();
+
+	}
+
+}
