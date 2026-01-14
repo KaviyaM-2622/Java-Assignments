@@ -1,0 +1,38 @@
+package Assignents;
+class User{
+	void login() {
+		System.out.println("User logged into the system");
+	}
+}
+class Admin extends User{
+	void manageUsers() {
+		System.out.println("Admin is managing users");
+	}
+}
+class Manager extends User{
+	void manageTeam() {
+		System.out.println("Manager is managing the tean");
+	}
+}
+class Customer extends User{
+	void placeOrder() {
+		System.out.println("Customer is placing an order");
+	}
+}
+public class HierarchicalInheritance {
+	public static void main(String[] args) {
+		Admin adm=new Admin();
+		adm.login();
+		adm.manageUsers();
+		
+		Manager mnr=new Manager();
+		mnr.login();
+		mnr.manageTeam();
+		
+		Customer cstr=new Customer();
+		cstr.login();
+		cstr.placeOrder();
+
+	}
+
+}
