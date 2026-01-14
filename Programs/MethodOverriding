@@ -1,0 +1,27 @@
+package com.index;
+//parent class
+class Employee3
+{
+	void work()
+	{
+		System.out.println("Employee is working");
+	}
+}
+//child class
+class Developer3 extends Employee3
+{
+	//overriding the parent method
+	void work()
+	{
+		System.out.println("Developer is working");
+	}
+}
+public class MethodOverridingSample {
+
+	public static void main(String[] args) {
+		Employee3 emp=new Developer3();
+		emp.work();
+
+	}
+
+}
