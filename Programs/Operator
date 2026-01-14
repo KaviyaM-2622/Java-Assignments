@@ -1,0 +1,83 @@
+package com.index;
+
+public class Operator {
+
+	public static void main(String[] args) {
+		//Aruthmetic Opeartor(+,-,*,/-quotient,%-reminder)
+		
+//		int num1=9;
+//		int num2=8;
+//		int result=num1+num2;
+//		
+//		System.out.println("The addition is "+result);
+		
+//		int num1=9;
+//		int num2=8;
+//		int result=num1-num2;
+//		
+//		System.out.println("The Sub is "+result);
+		
+//		int num1=9;
+//		int num2=8;
+//		int result=num1*num2;
+//		
+//		System.out.println("The mul is "+result);
+//		
+//		int num1=9;
+//		int num2=8;
+//		int result=num1/num2;
+//		
+//		System.out.println("The div is "+result);
+//		
+		
+		//Assignment Oprator--->=,int num1=9;
+		
+		//Relational Operator
+		
+		//NOT EQUAL TO OPERATOR(!=)
+//		if (a!=b)
+//		{
+//			System.out.println("A is not equal to B "+result);
+//		}
+//		else {
+//			System.out.println("A is equal to B" +result);
+//		}
+//		for (int i=0;i<10;i++)
+//		{
+//			System.out.println(i);
+//		}
+		
+//		int x=5,y=9;
+//		
+//		System.out.println("The value of post x "+" "+ x++);
+//		System.out.println(x);
+//		System.out.println("The value of post x "+" "+ y--);
+//		System.out.println(y);
+//		
+//		System.out.println("The value of pre x "+" "+ ++x);
+//		System.out.println(x);
+//		System.out.println("The value of pre x "+" "+ --y);
+//		System.out.println(y);
+		
+//		"greatest of 2 no's using ternary operator"
+		
+//		int max=(a>b) ? a:b;
+//		System.out.println("the result is "+max);
+//		
+		//"even or odd using ternary operator"
+		
+//		String result=(num%2==0)? "Even" : "Odd";
+//        System.out.println("the result is "+result);
+		
+//		"greatest of three numbers using ternary operator"
+//		
+//		int greatest =(a>b)
+//				?((a>c)?a:c)
+//						:((b>c)?b:c);
+//		System.out.println("the result is " +greatest); 
+//		
+//		
+	}
+}
+
+
